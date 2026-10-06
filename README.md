@@ -7,7 +7,7 @@ MediCare AI is a production-quality healthcare web application designed to help 
 ## 📁 Repository Structure
 
 ```
-C:\Users\krkts\OneDrive\Desktop\Internship\
+AI-Powered-Healthcare/
 ├── frontend/                  # React (Vite) Frontend Application
 │   ├── src/
 │   │   ├── components/        # UI & Layout components (PublicNavbar, AppSidebar, AppHeader, UserAvatar)
