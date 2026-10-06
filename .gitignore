@@ -1,0 +1,42 @@
+# Dependency directories
+node_modules/
+frontend/node_modules/
+.venv/
+env/
+venv/
+ENV/
+
+# Build and distribution
+dist/
+frontend/dist/
+build/
+frontend/build/
+.vite/
+frontend/.vite/
+
+# Python cache and bytecode
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Databases and SQLite
+*.sqlite3
+backend/*.sqlite3
+db.sqlite3
+
+# Environment and secret files
+.env
+*.env
+.env.local
+
+# IDE and OS metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+backend/*.log
+backend/medical_documents/

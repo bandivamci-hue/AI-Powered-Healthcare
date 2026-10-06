@@ -1,0 +1,110 @@
+:root {
+  /* Primary Healthcare Palette */
+  --primary-green: #16A57A;
+  --dark-green: #087F62;
+  --hover-green: #128c67;
+  --light-mint: #EAF8F2;
+  --mint-bg: #F0FDF8;
+  --mint-border: #D1F1E5;
+
+  /* Accent Colors for Status & Cards */
+  --blue-soft-bg: #EFF6FF;
+  --blue-icon-bg: #DBEAFE;
+  --blue-text: #2563EB;
+  
+  --yellow-soft-bg: #FEF3C7;
+  --yellow-icon-bg: #FDE68A;
+  --yellow-text: #D97706;
+  
+  --purple-soft-bg: #F3E8FF;
+  --purple-icon-bg: #E9D5FF;
+  --purple-text: #7C3AED;
+
+  --orange-accent: #EA580C;
+  --orange-soft-bg: #FFEDD5;
+
+  /* Typography Colors (Light Theme) */
+  --text-primary: #111827;
+  --text-secondary: #4B5563;
+  --text-muted: #667085;
+  --text-light: #9CA3AF;
+
+  /* Backgrounds & Surface (Light Theme) */
+  --bg-app: #F8FAFC;
+  --bg-card: #FFFFFF;
+  --bg-input: #F9FAFB;
+  --border-subtle: #E5E7EB;
+  --border-card: #F1F5F9;
+
+  /* Status Badges */
+  --badge-taken-bg: #D1FAE5;
+  --badge-taken-text: #047857;
+  --badge-upcoming-bg: #FFEDD5;
+  --badge-upcoming-text: #C2410C;
+  --badge-pending-bg: #F3F4F6;
+  --badge-pending-text: #4B5563;
+  --badge-extracted-bg: #EAF8F2;
+  --badge-extracted-text: #087F62;
+
+  /* Radius & Spacing */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Soft Healthcare Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 2px 10px rgba(0, 0, 0, 0.03);
+
+  /* Fonts */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* PROFESSIONAL HEALTHCARE DARK MODE THEME */
+[data-theme="dark"] {
+  --text-primary: #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-light: #475569;
+
+  --bg-app: #0B1220;
+  --bg-sidebar: #0F172A;
+  --bg-card: #111827;
+  --bg-input: #172033;
+  --border-subtle: #263244;
+  --border-card: #1E293B;
+
+  --primary-green: #10B981;
+  --dark-green: #34D399;
+  --hover-green: #059669;
+
+  --light-mint: rgba(16, 185, 129, 0.14);
+  --mint-bg: rgba(16, 185, 129, 0.08);
+  --mint-border: rgba(16, 185, 129, 0.25);
+
+  --blue-soft-bg: rgba(37, 99, 235, 0.15);
+  --blue-text: #60A5FA;
+
+  --yellow-soft-bg: rgba(245, 158, 11, 0.15);
+  --yellow-text: #FBBF24;
+
+  --purple-soft-bg: rgba(147, 51, 234, 0.15);
+  --purple-text: #C084FC;
+
+  --badge-taken-bg: rgba(16, 185, 129, 0.2);
+  --badge-taken-text: #34D399;
+
+  --badge-upcoming-bg: rgba(245, 158, 11, 0.2);
+  --badge-upcoming-text: #FB923C;
+
+  --badge-pending-bg: #172033;
+  --badge-pending-text: #94A3B8;
+
+  --badge-extracted-bg: rgba(16, 185, 129, 0.2);
+  --badge-extracted-text: #34D399;
+
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

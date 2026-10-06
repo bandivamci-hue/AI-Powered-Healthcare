@@ -1,0 +1,366 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--hover-green);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.btn-secondary {
+  background-color: var(--light-mint);
+  color: var(--dark-green);
+}
+
+.btn-secondary:hover {
+  background-color: var(--mint-bg);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--bg-app);
+  border-color: var(--primary-green);
+}
+
+.btn-outline-green {
+  background-color: transparent;
+  border: 1.5px solid var(--primary-green);
+  color: var(--primary-green);
+}
+
+.btn-outline-green:hover {
+  background-color: var(--light-mint);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: var(--radius-md);
+}
+
+.btn-full {
+  width: 100%;
+}
+
+/* Card Container */
+.med-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.med-card-sm {
+  padding: 16px;
+  border-radius: var(--radius-md);
+}
+
+/* Input & Form Elements */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  padding-left: 42px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background-color: var(--bg-input);
+  color: var(--text-primary);
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field.no-icon {
+  padding-left: 16px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  background-color: var(--bg-input);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+/* Timeline Layout for Schedule */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.timeline-time {
+  min-width: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.timeline-time > span:first-child {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.timeline-subtext {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.timeline-dot-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-line {
+  width: 2px;
+  background-color: var(--border-subtle);
+  position: absolute;
+  top: 12px;
+  bottom: -20px;
+  z-index: 1;
+}
+
+.timeline-card {
+  flex: 1;
+  background-color: var(--bg-app);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.timeline-card:hover {
+  border-color: var(--primary-green);
+  transform: translateX(2px);
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px 24px;
+  text-align: center;
+  background-color: var(--bg-card);
+  transition: border-color 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.upload-box:hover, .upload-box.drag-active {
+  border-color: var(--primary-green);
+  background-color: var(--mint-bg);
+}
+
+.upload-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: var(--light-mint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  margin: 0 auto 16px;
+}
+
+/* AI Chat Typing / Loading Animation */
+@keyframes ai-pulse-glow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes ai-dot-bounce {
+  0%, 80%, 100% {
+    transform: translateY(0);
+    opacity: 0.35;
+  }
+  40% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.ai-loading-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 0;
+}
+
+.ai-loading-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--light-mint);
+  color: var(--primary-green);
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+  animation: ai-pulse-glow 2s infinite ease-in-out;
+}
+
+.ai-loading-text {
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ai-typing-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 3.5px;
+}
+
+.ai-typing-dots span {
+  width: 4.5px;
+  height: 4.5px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  display: inline-block;
+  animation: ai-dot-bounce 1.3s infinite ease-in-out both;
+}
+
+.ai-typing-dots span:nth-child(1) {
+  animation-delay: -0.32s;
+}
+
+.ai-typing-dots span:nth-child(2) {
+  animation-delay: -0.16s;
+}
+
+.ai-typing-dots span:nth-child(3) {
+  animation-delay: 0s;
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prescription Radar Scanner Laser Animation */
+@keyframes laser-sweep {
+  0% {
+    top: 2%;
+    opacity: 0.7;
+  }
+  50% {
+    top: 96%;
+    opacity: 1;
+  }
+  100% {
+    top: 2%;
+    opacity: 0.7;
+  }
+}
+
+.scanner-laser-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #10B981, #34D399, #10B981, transparent);
+  box-shadow: 0 0 16px 4px rgba(16, 185, 129, 0.75);
+  animation: laser-sweep 2.2s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  70% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 16px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.processing-radar-circle {
+  animation: pulse-ring 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
